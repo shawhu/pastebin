@@ -1,0 +1,4 @@
+awsappid 123456
+awsappkey asdfasfdasf
+AccountServerUrlBase https://ac.coconut.is/api
+SessionCacheSource memory
