@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 //import Hello from './components/hello'
 import { } from 'bootstrap-css'
-import { PageHeader } from 'react-bootstrap'
+import { PageHeader,Col } from 'react-bootstrap'
 import InputForm from './components/InputForm'
 import CodeList from './components/CodeList'
 import DeleteButton from './components/DeleteButton'
@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <PageHeader>Pastebin <small>v0.6</small></PageHeader>
+        <Col sm={10}><PageHeader>Pastebin <small>v0.6</small></PageHeader></Col>
         <InputForm onPaste={(pastedcode)=>{
           fetch(baseurl,{
             method: 'POST',

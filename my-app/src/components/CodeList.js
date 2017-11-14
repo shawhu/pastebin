@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CodeListItem from './CodeListItem'
-import { Form,FormGroup,FormControl,Col,ControlLabel,Button } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 class CodeList extends Component {
     render() {
@@ -9,7 +9,7 @@ class CodeList extends Component {
         });
         return (
             <div>
-            <Col sm={10}>Clicking on code to copy it to the clipboard.</Col>
+            <Col sm={10}>Click the code to copy to the clipboard.</Col>
             <ul>{Items}</ul>
             </div>
         )
